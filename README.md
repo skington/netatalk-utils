@@ -12,4 +12,7 @@ This bounces eth0, which on my VM is the main interface that shares my
 wi-fi connection, gets the new IP address, connects to my local Mac
 and tells it to mount the volume using the new IP address.
 
-## 
+## open-on-mac.pl
+
+Put this as $ENV{BROWSER} and open URLs on your mac, not your local
+VM.
