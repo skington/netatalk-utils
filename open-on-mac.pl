@@ -11,4 +11,4 @@ my $url = shift;
 my ($mac_ipaddress)
     = `avahi-resolve --name $mac_hostname -4`
     =~ m{ ( (?: \d{1,3}[.] ){3} \d{1,3} ) }x;
-exec("ssh $mac_ipaddress 'open $url'");
+exec(qq{ssh $mac_ipaddress 'open "$url"'});
